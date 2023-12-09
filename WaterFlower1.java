@@ -1,4 +1,4 @@
-public class WaterFlower {
+public class WaterFlower1 {
     public static void main(
             String[] args) {
         //计算1000以内的水仙花数
