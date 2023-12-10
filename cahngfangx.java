@@ -14,9 +14,6 @@ public class changfangx {
                 System.out.print("*");
             }
            System.out.print("\n");
-
-
         }
-
     }
 }
