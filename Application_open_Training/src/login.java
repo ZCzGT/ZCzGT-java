@@ -91,8 +91,6 @@ public class login {
                     JOptionPane.showMessageDialog(loginFrame, "登录失败，请重新输入");
 
                 }
-
-
             }
         };
 
@@ -101,7 +99,8 @@ public class login {
 
         loginFrame.getContentPane().add(loginButton,BorderLayout.SOUTH);
 //        loginButton.setBounds(150, 200, 50, 10);
-
+//        设置边框
+        jp.setBorder(BorderFactory.createLineBorder(new Color(0,0,0,0),10));
 
 
         loginFrame.setVisible(true);

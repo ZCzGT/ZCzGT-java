@@ -80,7 +80,7 @@ public class goodsManager extends JFrame implements ActionListener {
         panel.add(LuckyButton2);
 
         getContentPane().add(panel);
-
+//        panel.setBorder(BorderFactory.createLineBorder(new Color(0,0,0,0),20));
 
 
         setVisible(true);
@@ -117,9 +117,15 @@ public class goodsManager extends JFrame implements ActionListener {
          int screenheight = tk.getScreenSize().height;
          dialog.setBounds ((screenwidth - width) / 2, (screenheight - height) / 2, width, height);
 
+         JLabel alltags = new JLabel("ID           \t 名字            \t 价格          \t 数量");
+         alltags.setFont(new Font("宋体", Font.BOLD, 23));
+         alltags.setForeground(Color.blue);
+
 
          dialog.getContentPane().setLayout(new BorderLayout());
          dialog.getContentPane().add(record,BorderLayout.CENTER);
+
+         dialog.getContentPane().add(alltags,BorderLayout.NORTH);
          dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
          dialog.setVisible(true);
      }else if (command.equals("幸运按钮")){

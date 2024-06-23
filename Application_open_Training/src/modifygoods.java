@@ -71,6 +71,7 @@ public class modifygoods extends JFrame {
             }
         };
         modifyb.addActionListener(actionListener);
+
         setVisible(true);
     }
 }

@@ -49,6 +49,7 @@ public class modifyupdate extends JFrame {
 
         JLabel t1 = new JLabel("Id");
         JLabel t1a = new JLabel(id + "");
+        t1a.setForeground(Color.BLUE);
         JLabel goodsId = new JLabel("修改的商品id >>");
         goodsIdF = new JTextField();
         goodsIdF.setFont(new Font("幼圆", Font.BOLD, 24));
@@ -57,6 +58,7 @@ public class modifyupdate extends JFrame {
 
         JLabel t2 = new JLabel("商品名字");
         JLabel t2a = new JLabel(target.getName());
+        t2a.setForeground(Color.BLUE);
         JLabel goodsName = new JLabel("修改的商品名称  >>");
         goodsNameF = new JTextField();
         goodsNameF.setFont(new Font("幼圆", Font.BOLD, 24));
@@ -65,6 +67,7 @@ public class modifyupdate extends JFrame {
 
         JLabel t3 = new JLabel("商品价格");
         JLabel t3a = new JLabel(target.getPrice() + "");
+        t3a.setForeground(Color.BLUE);
         JLabel goodsPrice = new JLabel("修改的商品价格  >>");
         goodsPriceF = new JTextField();
         goodsPriceF.setFont(new Font("幼圆", Font.BOLD, 24));
@@ -73,6 +76,7 @@ public class modifyupdate extends JFrame {
 
         JLabel t4 = new JLabel("商品数量");
         JLabel t4a = new JLabel(target.getAmount() + "");
+        t4a.setForeground(Color.BLUE);
         JLabel goodsAmount = new JLabel("修改的商品个数  >>");
         goodsAmountF = new JTextField();
         goodsAmountF.setFont(new Font("幼圆", Font.BOLD, 24));
@@ -125,17 +129,6 @@ public class modifyupdate extends JFrame {
             //这个是用来判断填写id数量价格不是负数
             JOptionPane.showMessageDialog(null, "Error 数据不能为负数");
         } else {
-            //这个用来判断id唯一性
-
-            int goodsIdc = Integer.parseInt(goodsIdF.getText());
-            // 检查ID是否唯一
-            for (Goods g : goodsList) {
-                if (g.getId() == goodsIdc) {
-                    // 这个用来判断id唯一性
-                    JOptionPane.showMessageDialog(null, "Id重复了哦，请重新输入");
-                    return;
-                }
-            }
 
 
             int goodsId = Integer.parseInt(goodsIdF.getText());
@@ -145,7 +138,7 @@ public class modifyupdate extends JFrame {
             Goods goods1 = new Goods(goodsId, goodsName, goodsPrice, goodsAmount);
             goodsList.add(goods1);
             goodsList.remove(finalTarget);
-            JOptionPane.showMessageDialog(null, "添加成功");
+            JOptionPane.showMessageDialog(null, "修改成功");
 
 
         }

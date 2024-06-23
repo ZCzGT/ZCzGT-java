@@ -42,12 +42,16 @@ public class queryanswer extends JFrame {
 
         JLabel t1 = new JLabel("Id");
         JLabel t1a = new JLabel(id + "");
+        t1a.setForeground(Color.BLUE);
         JLabel t2 = new JLabel("商品名字");
         JLabel t2a = new JLabel(target.getName());
+        t2a.setForeground(Color.BLUE);
         JLabel t3 = new JLabel("商品价格");
         JLabel t3a = new JLabel(target.getPrice() + "");
+        t3a.setForeground(Color.BLUE);
         JLabel t4 = new JLabel("商品数量");
         JLabel t4a = new JLabel(target.getAmount() + "");
+        t4a.setForeground(Color.BLUE);
 
         jp.add(t1);
         jp.add(t1a);
