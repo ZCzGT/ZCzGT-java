@@ -52,7 +52,7 @@ CREATE TABLE `tb_brand`  (
 -- Records of tb_brand
 -- ----------------------------
 INSERT INTO `tb_brand` VALUES (1, '三只松鼠', '三只松鼠股份', 5, '好吃', 0);
-INSERT INTO `tb_brand` VALUES (2, '华为', '化为技术', 100, 'hw', 1);
+INSERT INTO `tb_brand` VALUES (2, '华为', '化为技术', 100, '不错', 1);
 INSERT INTO `tb_brand` VALUES (3, '小米', '小米科技', 50, '好用', 1);
 
 -- ----------------------------
