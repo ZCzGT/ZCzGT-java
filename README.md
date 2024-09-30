@@ -8,4 +8,4 @@
 
 #### 安装教程
 
-1.  None
+<a href='https://gitee.com/CzGT_admin/ZCzGT/stargazers'><img src='https://gitee.com/CzGT_admin/ZCzGT/badge/star.svg?theme=dark' alt='star'></img></a>
